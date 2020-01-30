@@ -58,7 +58,7 @@ namespace SlotokingNew.Pages
         public IWebElement Myprize => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div/aside/nav/ul/li[2]/span[1]"));
         public IWebElement UtchastvovatTournament => Driver.WaitUntilVisible(By.XPath("//*[@id='profileDashboardTournamentJoinTournament']/span"));
         public IWebElement PlayUtchastvovatTournament => Driver.WaitUntilVisible(By.Id("profileDashboardTournamentJoinTournament"));
-        public IWebElement GonkaNachalas => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div[3]/div[2]/div/div[1]/div/div[2]"));
+        public IWebElement GonkaNachalas => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div/section/div/div[2]/div/div[1]/div/div[3]/span"));
         public IWebElement IgraySeychas => Driver.WaitUntilVisible(By.XPath("//*[@id='profileDashboardTournamentJoinGame']/span"));
 
 

@@ -4,7 +4,6 @@ using SlotokingNew;
 using SlotokingNew.Pages;
 using SlotokingNewDesktop;
 using System;
-using System.Net;
 using System.Threading;
 
 namespace MobVersion
@@ -1285,7 +1284,7 @@ namespace MobVersion
             }
             catch
             {
-
+                
                 StringAssert.AreEqualIgnoringCase("ИГРАТЬ\r\n СЕЙЧАС", account.IgraySeychas.Text);
             }
         }
@@ -1431,7 +1430,7 @@ namespace MobVersion
             HeaderMenu head = new HeaderMenu();
             ProfilePage account = new ProfilePage();
             vue.RegistrationMob(false);
-           
+            Driver.Browser.Url = TestDataResource.MainPageURL;
             head.ProfileIcon.Click();
 
             Assert.NotNull(account.BonusBalance.Displayed);
