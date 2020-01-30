@@ -316,14 +316,7 @@ namespace SlotokingNew.Pages
             }
             catch
             {
-                CashBox replenish = new CashBox();
-                CloseBonus.Click();
-
-                //Driver.Browser.SwitchTo().DefaultContent();
-
-                Driver.Browser.SwitchTo().Frame(Driver.Browser.FindElement(By.Id("frame-cash")));
-                Thread.Sleep(1000);
-                replenish.CloseCassa.Click();
+                Driver.Browser.Url = TestDataResource.MainPageURL;
             }
 
 

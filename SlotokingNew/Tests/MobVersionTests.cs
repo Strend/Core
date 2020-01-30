@@ -1431,7 +1431,7 @@ namespace MobVersion
             HeaderMenu head = new HeaderMenu();
             ProfilePage account = new ProfilePage();
             vue.RegistrationMob(false);
-            Driver.Browser.Url = TestDataResource.MainPageURL;
+           
             head.ProfileIcon.Click();
 
             Assert.NotNull(account.BonusBalance.Displayed);
