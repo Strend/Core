@@ -47,7 +47,7 @@ namespace SlotokingNew.Pages
         //vip profile
 
         public IWebElement VipStatusButton => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div/aside/div/div[1]/div[1]/span/span"));
-        public IWebElement VipStatusButtonAbout => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div/aside/div/div[1]/div[1]/div/div/div/div[2]/button/span"));
+        public IWebElement VipStatusButtonAbout => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div/aside/div[1]/div[1]/div[1]/div/div/div/div[2]/div[2]/div/button"));
 
         public IWebElement VipStatusButtonAboutKing => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > div > div > section.vip-block > div > div.vip-block__list-wrapper > ul > li:nth-child(7) > p"));
 
@@ -58,7 +58,7 @@ namespace SlotokingNew.Pages
         public IWebElement Myprize => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div/aside/nav/ul/li[2]/span[1]"));
         public IWebElement UtchastvovatTournament => Driver.WaitUntilVisible(By.XPath("//*[@id='profileDashboardTournamentJoinTournament']/span"));
         public IWebElement PlayUtchastvovatTournament => Driver.WaitUntilVisible(By.Id("profileDashboardTournamentJoinTournament"));
-        public IWebElement GonkaNachalas => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div/section/div/div[2]/div/div[1]/div/div[3]/span"));
+        public IWebElement GonkaNachalas => Driver.WaitUntilVisible(By.Id("profileDashboardTournamentJoinGame"));
         public IWebElement IgraySeychas => Driver.WaitUntilVisible(By.XPath("//*[@id='profileDashboardTournamentJoinGame']/span"));
 
 

@@ -10,7 +10,9 @@ namespace SlotokingNew.Pages
         public IWebElement CashboxPopupTakeMethodVisaMaster => Driver.WaitUntilVisible(By.XPath("//*[contains(@src, 'VMCardAlt.png')]"));
         public IWebElement CashboxPopupAgreeVisaMaster => Driver.WaitUntilVisible(By.XPath("/html/body/div[1]/div[1]/div[2]/div[2]/span/span[2]"));
         public IWebElement CashboxPopupAgreeVisaMasterUah => Driver.WaitUntilVisible(By.CssSelector("#step-1 > div > ul > li.cash3__method-currency.cash3__method-currency--expanded > div > div > button:nth-child(1)"));
+        public IWebElement TakeUAH => Driver.WaitUntilVisible(By.CssSelector("#step-1 > div > ul > li.cash3__method-currency.cash3__method-currency--expanded > div > div > button:nth-child(1)"));
 
+        
         public IWebElement CashboxPopupTakeMethodWebmoney => Driver.WaitUntilVisible(By.XPath("//*[contains(@src, 'webmoney.png')]"));
         public IWebElement CashboxPopupTakeMethodWebmoneyWMR => Driver.WaitUntilVisible(By.CssSelector("#step-1 > div > ul > li.cash3__method-currency.cash3__method-currency--expanded > div > div > button:nth-child(1)"));
         public IWebElement CashboxPopupTakeMethodQiwiRub => Driver.WaitUntilVisible(By.CssSelector("#step-1 > div > ul > li.cash3__method-currency.cash3__method-currency--expanded > div > div > button:nth-child(1)"));

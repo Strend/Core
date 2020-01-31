@@ -20,10 +20,10 @@ namespace SlotokingNewDesktop
             Driver.StartBrowser();
             Driver.Browser.Manage().Window.Maximize();
 
-            
+
             vue.Auth(TestDataResource.CashLogin, false);
-           
-            
+
+
             replenish.CashboxButton.Click();
             Driver.Browser.SwitchTo().Frame(Driver.Browser.FindElement(By.Id("frame-cash")));
 
@@ -32,6 +32,7 @@ namespace SlotokingNewDesktop
 
 
         [Test]
+        [Ignore("Отсутствует")]
         public void NewCashierReplenishmentVisaMaster()
         {
 
@@ -56,6 +57,8 @@ namespace SlotokingNewDesktop
         {
             replenish.CashboxPopupTakeMethodVisa.Click();
             //replenish.CashboxPopupInput.SendKeys(TestDataResource.Payments);
+            replenish.TakeUAH.Click();
+
             replenish.Take1000Money.Click();
             replenish.CashboxPopupButtonpush.Click();
             replenish.AgreePaymentsLast.Click();
@@ -157,6 +160,7 @@ namespace SlotokingNewDesktop
         }
 
         [Test]
+        [Ignore("нету на сайте")]
         public void NewCashierReplenishmentWalletOne()
         {
 
@@ -164,7 +168,7 @@ namespace SlotokingNewDesktop
             //replenish.CashboxPopupInput.SendKeys(TestDataResource.Payments);
             replenish.Take1000Money.Click();
             replenish.CashboxPopupButtonpush.Click();
-            //replenish.CashboxPopupnextSteppush.Click();
+            replenish.CashboxPopupnextSteppush.Click();
             replenish.AgreePaymentsLast.Click();
             replenish.CashboxPopupnextSteppushend.Click();
             Driver.Browser.SwitchTo().DefaultContent();

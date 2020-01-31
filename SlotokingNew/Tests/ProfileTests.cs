@@ -85,18 +85,8 @@ namespace SlotokingNewDesktop
             account.Myprize.Click();
             account.PlayUtchastvovatTournament.Click();
 
-            try {
-                StringAssert.AreEqualIgnoringCase("Гонка началась", account.GonkaNachalas.Text);
-            }
+            Assert.NotNull(account.IgraySeychas);
 
-
-
-            catch {
-
-                StringAssert.AreEqualIgnoringCase("ИГРАТЬ\r\n СЕЙЧАС", account.IgraySeychas.Text);
-            }
-            
-                        
         }
 
         [Test]
