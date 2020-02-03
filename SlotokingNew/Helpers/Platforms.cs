@@ -1,4 +1,4 @@
-﻿namespace SlotokingNew
+﻿namespace Core
 {
     public enum Platforms
     {

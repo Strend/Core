@@ -1,5 +1,5 @@
 ﻿
-namespace SlotokingNew.Helpers
+namespace Core
 {
     public enum BrowserTypes
     {

@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SlotokingNew
+namespace Core
 {
     public static class ExpectedConditions
         {

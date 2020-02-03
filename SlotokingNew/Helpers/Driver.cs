@@ -4,13 +4,12 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
-using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using SlotokingNew.Helpers;
+using SlotokingNew;
 using System;
 using System.Threading;
 
-namespace SlotokingNew
+namespace Core
 {
     public static class Driver
     {
@@ -49,7 +48,6 @@ namespace SlotokingNew
                             options.AddUserProfilePreference("profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player", 1);
                             options.AddArgument("-disable-features=RendererCodeIntegrity");
                             options.AddUserProfilePreference("PluginsAllowedForUrls", "http:/ ");
-                            options.AddUserProfilePreference("PluginsAllowedForUrls", TestDataResource.MainPageURL);
                             Browser = new ChromeDriver(options);
                             break;
                         case BrowserTypes.Edge:
