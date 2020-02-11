@@ -28,7 +28,7 @@ namespace Slotoking
             menu.LoginButton.Click();
 
         }
-
+       
         [Test]
         public void AutorizationEmailSucces()
         {
@@ -38,7 +38,7 @@ namespace Slotoking
             Assert.NotNull(menu.ProfileIcon.Displayed);
         }
 
-
+      
         [Test]
         public void AutorizationPhoneSucces()
         {
@@ -48,7 +48,7 @@ namespace Slotoking
             Assert.NotNull(menu.ProfileIcon.Displayed);
         }
 
-
+        
         [Test]
         public void Authorization_RestorePass_Negative()
         {
@@ -59,7 +59,7 @@ namespace Slotoking
 
             StringAssert.AreEqualIgnoringCase("Поле Номер телефона обязательно для заполнения", vue.LoginEmailErrorText.Text);
         }
-
+        
         [Test]
         public void Authorization_RestorePassEmail_Positive()
         {
@@ -71,7 +71,7 @@ namespace Slotoking
             StringAssert.AreEqualIgnoringCase("Отправить еще раз", vue.RestorePassFinalSendMore.Text);
 
         }
-
+        
         [Test]
         public void Authorization_VKLogin_Positive()
         {
@@ -86,7 +86,7 @@ namespace Slotoking
 
             Assert.NotNull(menu.ProfileIcon.Displayed);
         }
-
+       
         [Test]
         [Ignore("not suport")]
         public void Authorization_FacebookLogin_Positive()
@@ -101,7 +101,7 @@ namespace Slotoking
 
             Assert.NotNull(menu.ProfileIcon.Displayed);
         }
-
+       
         [Test]
         public void Authorization_GoogleLogin_Positive()
         {
@@ -118,7 +118,7 @@ namespace Slotoking
 
             Assert.NotNull(menu.ProfileIcon.Displayed);
         }
-
+        
         [Test]
         public void Authorization_OK_Positive()
         {
@@ -132,7 +132,7 @@ namespace Slotoking
 
             Assert.NotNull(menu.ProfileIcon.Displayed);
         }
-
+        
         [Test]
         public void Authorization_MailRU_Positive()
         {
@@ -147,7 +147,7 @@ namespace Slotoking
 
              Assert.NotNull(menu.ProfileIcon.Displayed);
         }
-
+      
         [Test]
         public void Authorization_Twitter_Positive()
         {
@@ -162,7 +162,7 @@ namespace Slotoking
 
              Assert.NotNull(menu.ProfileIcon.Displayed);
         }
-
+        
         [Test]
         public void Authorization_RestorePassPhone_Positive()
         {

@@ -142,7 +142,7 @@ namespace SlotokingNew {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://slotoking.com/.
+        ///   Looks up a localized string similar to http://slotoking.ntgdev.com/.
         /// </summary>
         internal static string MainPageURL {
             get {

@@ -5,7 +5,6 @@ using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Support.UI;
-using SlotokingNew;
 using System;
 using System.Threading;
 
@@ -30,19 +29,12 @@ namespace Core
                             Browser = new FirefoxDriver();
                             FirefoxProfile profile = new FirefoxProfile();
                             profile.SetPreference("general.useragent.override", "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)");
-
-                           
-                            
-
-
-
-                            break;
+                        break;
                         case BrowserTypes.InternetExplorer:
                             Browser = new InternetExplorerDriver();
                             break;
                         case BrowserTypes.Chrome:
                             ChromeOptions options = new ChromeOptions();
-                           // options.AddArgument("--user-agent=RiverModal/1.0.0 Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36");
                             options.AddUserProfilePreference("profile.default_content_setting_values.plugins", 1);
                             options.AddUserProfilePreference("profile.content_settings.plugin_whitelist.adobe-flash-player", 1);
                             options.AddUserProfilePreference("profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player", 1);
@@ -73,6 +65,47 @@ namespace Core
 
         //    //var driver = new RemoteWebDriver(new Uri("http://127.0.0.1:4723/wd/hub"), options.ToCapabilities());
         //}
+
+
+
+        public static void StartModal(Platforms platform = Platforms.Desktop, BrowserTypes browserType = BrowserTypes.Chrome, int defaultTimeOut = 10)
+        {
+            switch (platform)
+            {
+                case (Platforms.Desktop):
+                    switch (browserType)
+                    {
+                        case BrowserTypes.Firefox:
+                            Browser = new FirefoxDriver();
+                            FirefoxProfile profile = new FirefoxProfile();
+                            profile.SetPreference("general.useragent.override", "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)");
+                        break;
+                        case BrowserTypes.InternetExplorer:
+                            Browser = new InternetExplorerDriver();
+                            break;
+                        case BrowserTypes.Chrome:
+                            ChromeOptions options = new ChromeOptions();
+                            options.AddArgument("--user-agent=RiverModal/1.0.0 Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36");
+                            options.AddUserProfilePreference("profile.default_content_setting_values.plugins", 1);
+                            options.AddUserProfilePreference("profile.content_settings.plugin_whitelist.adobe-flash-player", 1);
+                            options.AddUserProfilePreference("profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player", 1);
+                            options.AddArgument("-disable-features=RendererCodeIntegrity");
+                            options.AddUserProfilePreference("PluginsAllowedForUrls", "http:/ ");
+                            Browser = new ChromeDriver(options);
+                            break;
+                        case BrowserTypes.Edge:
+                            Browser = new EdgeDriver();
+                            break;
+                        default:
+                            Browser = new ChromeDriver();
+                            break;
+                    }
+                    BrowserWait = new WebDriverWait(Driver.Browser, TimeSpan.FromSeconds(defaultTimeOut));
+                    break;
+            }
+        }
+
+
 
 
         public static void StartWebEmulatorMob(Platforms platform = Platforms.WebEmulatorMob, int defaultTimeOut = 15)
