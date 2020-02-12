@@ -2,7 +2,6 @@
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
-using SlotokingNew;
 using System.Threading;
 
 namespace Slotoking

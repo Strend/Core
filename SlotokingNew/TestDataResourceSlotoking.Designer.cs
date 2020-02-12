@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SlotokingNew {
+namespace Core {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SlotokingNew {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SlotokingNew.TestDataResourceSlotoking", typeof(TestDataResourceSlotoking).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Core.TestDataResourceSlotoking", typeof(TestDataResourceSlotoking).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

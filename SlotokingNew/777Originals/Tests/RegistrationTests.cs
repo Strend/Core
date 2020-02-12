@@ -1,7 +1,6 @@
 ﻿using Core;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using SlotokingNew;
 using System;
 
 namespace Vulkan777

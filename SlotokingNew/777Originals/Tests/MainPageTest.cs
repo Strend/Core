@@ -1,7 +1,6 @@
 ﻿using Core;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using SlotokingNew;
 using System.Threading;
 
 namespace Vulkan777
@@ -91,7 +90,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -106,7 +104,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -119,8 +116,6 @@ namespace Vulkan777
         {
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.MoreGamesButton.Click();
 
 
@@ -147,8 +142,6 @@ namespace Vulkan777
         {
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.MoreGamesButtonNew.Click();
 
 
@@ -163,7 +156,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -180,7 +172,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -198,7 +189,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
             prof.Scroll_todownToLoad();
@@ -216,8 +206,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             ProfilePage vque = new ProfilePage();
             vque.Scroll_todownToLoad();
             Assert.NotNull(main.PrivetstveniyPaket.Displayed);
@@ -234,8 +222,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
 
             Assert.NotNull(main.PrivetstveniyPaketLogout.Displayed);
             main.scrollToButtonRegister();
@@ -251,8 +237,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollFooterfirm();
 
             main.RegisterButtonMain.Click();
@@ -267,11 +251,7 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
-
-
-
+                                       
             StringAssert.AreEqualIgnoringCase("Онлайн казино 777 Оригинал приветствует уважаемых гостей на своём сайте!", main.SeoTitle.Text);
             Assert.NotNull(main.SeoBlocksText.Displayed);
         }
@@ -284,7 +264,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -300,8 +279,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
 
             games.MoveCursorToGame(main.TooltipMain);
             StringAssert.AreEqualIgnoringCase("Горячая", main.ToltipTextMain.Text);
@@ -319,7 +296,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -335,8 +311,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
 
             main.Search.SendKeys("книжка");
             main.BookOfRa.Click();
@@ -353,7 +327,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -368,8 +341,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             Thread.Sleep(5000);
             main.SupportButton.Click();
 
@@ -397,8 +368,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
 
             Assert.NotNull(main.NavigatorMapsLink.Displayed);
         }
@@ -412,7 +381,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -425,8 +393,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
 
             Assert.NotNull(main.NavigatorMapsLink.Displayed);
         }
@@ -439,7 +405,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -453,8 +418,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollpam();
             main.privacy.Click();
             StringAssert.AreEqualIgnoringCase("Куда идет информация?", main.privacyText.Text);
@@ -469,7 +432,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -483,8 +445,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollpam();
             main.agreements.Click();
             System.Threading.Thread.Sleep(1000);
@@ -498,7 +458,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -514,8 +473,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.onlineSupport.Click();
             Assert.NotNull(main.onlineSupportText1.Displayed);
             Assert.NotNull(main.onlineSupportText2.Displayed);
@@ -532,7 +489,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -546,8 +502,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollpam();
             main.About.Click();
 
@@ -563,7 +517,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -578,8 +531,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollpam();
             main.AllBonuses.Click();
             System.Threading.Thread.Sleep(1000);
@@ -594,7 +545,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -609,8 +559,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollpam();
             main.PaymentsMetod.Click();
             StringAssert.AreEqualIgnoringCase("мгновенно", main.PaymentsMetodText.Text);
@@ -623,7 +571,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -638,8 +585,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollpam();
             main.FreeGame.Click();
             StringAssert.AreEqualIgnoringCase("казино 777 Original", main.FreeGameText.Text);
@@ -653,7 +598,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
             main.scrollDownloadBlock();
@@ -668,8 +612,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollDownloadBlock();
             main.ClientsForWindows.Click();
             Assert.NotNull(main.ClientsForWindowsText.Displayed);
@@ -683,7 +625,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -698,9 +639,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
-
             Assert.NotNull(main.FooterPartners.Displayed);
         }
 
@@ -712,7 +650,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -727,7 +664,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
             main.scrollDownloadBlock();
@@ -744,7 +680,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
             main.scrollDownloadBlock();
@@ -759,8 +694,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             main.scrollDownloadBlock();
             main.ClientForAndroid.Click();
             Assert.NotNull(main.ClientsForAndroidText.Displayed);
@@ -775,7 +708,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
             main.scrollpam();
@@ -789,7 +721,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
             Cashbox replish = new Cashbox();
             main.scrollpam();
             main.HowToStart.Click();
@@ -805,7 +736,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
             main.scrollpam();
@@ -821,7 +751,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
             main.scrollpam();
@@ -840,7 +769,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -881,8 +809,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
 
             main.FiltrCold.Click();
 
@@ -899,7 +825,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -917,8 +842,6 @@ namespace Vulkan777
             GamePage games = new GamePage();
 
             MainPage main = new MainPage();
-            VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
 
             main.FiltrHot.Click();
             StringAssert.AreEqualIgnoringCase("Горячий", main.TitleFilters.Text);
@@ -965,7 +888,6 @@ namespace Vulkan777
         public void Card_BonusesNoDeposit()
         {
 
-            MainPage mainPage = new MainPage();
             HeaderMenu header = new HeaderMenu();
             Thread.Sleep(1200);
             header.BonusesLnk.Click();

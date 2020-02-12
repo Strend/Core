@@ -1,7 +1,6 @@
 ﻿using Core;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using SlotokingNew;
 using System.Threading;
 
 namespace Slotoking
@@ -376,7 +375,6 @@ namespace Slotoking
         public void SearchGameTestNotRegistered()
         {
             MainPage main = new MainPage();
-            MainPage king = new MainPage();
             Driver.Browser.Url = TestDataResourceSlotoking.MainPageURL;
 
             main.SearchIcon.Click();

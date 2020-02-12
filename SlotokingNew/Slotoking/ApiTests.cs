@@ -1,6 +1,6 @@
-﻿using NUnit.Framework;
+﻿using Core;
+using NUnit.Framework;
 using RestSharp;
-using SlotokingNew;
 
 
 namespace Slotoking

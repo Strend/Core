@@ -1,7 +1,6 @@
 ﻿using Core;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using SlotokingNew;
 using System;
 using System.Threading;
 

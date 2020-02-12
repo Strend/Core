@@ -1,7 +1,6 @@
 ﻿using Core;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using SlotokingNew;
 using System;
 
 namespace Vulkan777
@@ -47,7 +46,6 @@ namespace Vulkan777
         public void MyBonuses()
         {
             VuePage vue = new VuePage();
-            Random rnd = new Random();
             ProfilePage account = new ProfilePage();
             vue.Registration(false);
 
@@ -62,7 +60,6 @@ namespace Vulkan777
         public void MyTournaments()
         {
             VuePage vue = new VuePage();
-            Random rnd = new Random();
             ProfilePage account = new ProfilePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             System.Threading.Thread.Sleep(1000);
@@ -80,7 +77,6 @@ namespace Vulkan777
         {
             Cashbox replish = new Cashbox();
             VuePage vue = new VuePage();
-            Random rnd = new Random();
             ProfilePage account = new ProfilePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             System.Threading.Thread.Sleep(2000);

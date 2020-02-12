@@ -1,6 +1,5 @@
 ﻿using Core;
 using OpenQA.Selenium;
-using SlotokingNew;
 
 namespace VipNetGame
 {

@@ -1,14 +1,12 @@
 ﻿using Core;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using SlotokingNew;
-using VipNetGame;
 
 namespace VipNetGame
 
 {
-    
-        [TestFixture]
+
+    [TestFixture]
         public class Authorization
         {
         
