@@ -18,7 +18,7 @@ namespace Core
         public static IWebElement WaitUntilVisible(By locator) => BrowserWait.Until(ExpectedConditions.ElementIsVisible(locator));
         public static IWebElement WaitUntilClickable(By locator) => BrowserWait.Until(ExpectedConditions.ElementToBeClickable(locator));
 
-        public static void StartBrowser(Platforms platform = Platforms.Desktop, BrowserTypes browserType = BrowserTypes.Chrome, int defaultTimeOut = 10)
+        public static void StartBrowser(Platforms platform = Platforms.Desktop, BrowserTypes browserType = BrowserTypes.Chrome, int defaultTimeOut = 5)
         {
             switch (platform)
             {
