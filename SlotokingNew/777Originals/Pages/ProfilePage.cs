@@ -127,7 +127,7 @@ namespace Vulkan777
 
         public void Scroll_todownToLoad() => (Driver.Browser as IJavaScriptExecutor).ExecuteScript(string.Format("window.scrollTo(0, {0});", 50));
 
-        MainPage jackpotblock = new MainPage();
+       // MainPage jackpotblock = new MainPage();
         public void ScrollToElementButtonReg() => (Driver.Browser as IJavaScriptExecutor).ExecuteScript("arguments[0].scrollIntoView();", ButtonReg);
     }
 }

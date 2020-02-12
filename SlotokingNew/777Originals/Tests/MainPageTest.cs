@@ -10,7 +10,6 @@ namespace Vulkan777
 
         [OneTimeSetUp]
         public void BeforeTestSuit() { }
-        HeaderMenu menu = new HeaderMenu();
         ProfilePage prof = new ProfilePage();
 
         [SetUp]
@@ -129,7 +128,6 @@ namespace Vulkan777
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -185,8 +183,6 @@ namespace Vulkan777
         [Test]
         public void WeCareForYou()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -203,7 +199,6 @@ namespace Vulkan777
         [Test]
         public void WeCareForYouLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             ProfilePage vque = new ProfilePage();
@@ -219,7 +214,6 @@ namespace Vulkan777
         [Test]
         public void WelcomePackLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
 
@@ -234,7 +228,6 @@ namespace Vulkan777
         [Test]
         public void RegisterDownButton()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             main.scrollFooterfirm();
@@ -248,7 +241,6 @@ namespace Vulkan777
         [Test]
         public void SeoBlockLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
                                        
@@ -260,7 +252,6 @@ namespace Vulkan777
         [Test]
         public void SeoBlock()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -292,7 +283,6 @@ namespace Vulkan777
         [Test]
         public void SearchGame()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -308,7 +298,6 @@ namespace Vulkan777
         [Test]
         public void SearchGameLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
 
@@ -323,7 +312,6 @@ namespace Vulkan777
         [Test]
         public void Support()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -338,7 +326,6 @@ namespace Vulkan777
         [Test]
         public void SupportLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             Thread.Sleep(5000);
@@ -352,8 +339,6 @@ namespace Vulkan777
         [Test]
         public void NavigatorBlock()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -365,7 +350,6 @@ namespace Vulkan777
         [Test]
         public void NavigatorBlockLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
 
@@ -375,9 +359,8 @@ namespace Vulkan777
 
 
         [Test]
-        public void licensed()
+        public void Licensed()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -388,9 +371,8 @@ namespace Vulkan777
         }
 
         [Test]
-        public void licensedLogout()
+        public void LicensedLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
 
@@ -401,8 +383,6 @@ namespace Vulkan777
         [Test]
         public void Privacy()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -415,7 +395,6 @@ namespace Vulkan777
         [Test]
         public void PrivacyLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             main.scrollpam();
@@ -428,7 +407,6 @@ namespace Vulkan777
         [Test]
         public void Agreements()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -442,7 +420,6 @@ namespace Vulkan777
         [Test]
         public void AgreementsLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             main.scrollpam();
@@ -452,9 +429,8 @@ namespace Vulkan777
         }
 
         [Test]
-        public void support()
+        public void Supports()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -468,10 +444,8 @@ namespace Vulkan777
         }
 
         [Test]
-        public void supportlogout()
+        public void Supportlogout()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             main.onlineSupport.Click();
             Assert.NotNull(main.onlineSupportText1.Displayed);
@@ -485,8 +459,6 @@ namespace Vulkan777
         [Test]
         public void About()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -499,8 +471,6 @@ namespace Vulkan777
         [Test]
         public void AboutLogout()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             main.scrollpam();
             main.About.Click();
@@ -513,8 +483,6 @@ namespace Vulkan777
         [Test]
         public void Allbonuses()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -528,8 +496,6 @@ namespace Vulkan777
         [Test]
         public void AllbonusesLogout()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             main.scrollpam();
             main.AllBonuses.Click();
@@ -541,8 +507,6 @@ namespace Vulkan777
         [Test]
         public void PaymentMethod()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -556,7 +520,6 @@ namespace Vulkan777
         [Test]
         public void PaymentMethodLogout()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             main.scrollpam();
@@ -567,7 +530,6 @@ namespace Vulkan777
         [Test]
         public void FreeGame()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -582,8 +544,6 @@ namespace Vulkan777
         [Test]
         public void FreeGameLogout()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             main.scrollpam();
             main.FreeGame.Click();
@@ -594,7 +554,6 @@ namespace Vulkan777
         [Test]
         public void ClientForWindows()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -609,8 +568,6 @@ namespace Vulkan777
         [Test]
         public void ClientForWindowsLogout()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             main.scrollDownloadBlock();
             main.ClientsForWindows.Click();
@@ -621,7 +578,6 @@ namespace Vulkan777
         [Test]
         public void FooterPartners()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -636,8 +592,6 @@ namespace Vulkan777
         [Test]
         public void FooterPartnersLogput()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             Assert.NotNull(main.FooterPartners.Displayed);
         }
@@ -646,8 +600,6 @@ namespace Vulkan777
         [Test]
         public void ClientForAndroid()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -660,8 +612,6 @@ namespace Vulkan777
         [Test]
         public void ClientForWindowsBlockDownload()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -676,8 +626,6 @@ namespace Vulkan777
         [Test]
         public void ClientForAndroidBlockDownload()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -691,8 +639,6 @@ namespace Vulkan777
         [Test]
         public void ClientForAndroidLogout()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             main.scrollDownloadBlock();
             main.ClientForAndroid.Click();
@@ -704,8 +650,6 @@ namespace Vulkan777
         [Test]
         public void HowToStart()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -718,10 +662,7 @@ namespace Vulkan777
         [Test]
         public void HowToStartLogout()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
-            Cashbox replish = new Cashbox();
             main.scrollpam();
             main.HowToStart.Click();
             StringAssert.AreEqualIgnoringCase("ШАГ 4.", main.HowToStartText.Text);
@@ -732,7 +673,6 @@ namespace Vulkan777
         [Test]
         public void DownloadClientButtonDesktop()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -747,7 +687,6 @@ namespace Vulkan777
         [Ignore("wait id")]
         public void DownloadClientButtonMobile()
         {
-            GamePage games = new GamePage();
 
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
@@ -765,8 +704,6 @@ namespace Vulkan777
         [Test]
         public void FilterGameCold()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -784,13 +721,10 @@ namespace Vulkan777
 
 
         [Test]
-        public void allbonuses()
+        public void Allbonus()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
-            Cashbox replish = new Cashbox();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
             main.logo.Click();
 
@@ -804,10 +738,8 @@ namespace Vulkan777
         }
 
         [Test]
-        public void allbonusesД()
+        public void AllbonusesД()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
 
             main.FiltrCold.Click();
@@ -821,8 +753,6 @@ namespace Vulkan777
         [Test]
         public void FilterGameColdHot()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
             VuePage vue = new VuePage();
             vue.Auth(TestDataResource777Originals.GameUserTest, false);
@@ -839,8 +769,6 @@ namespace Vulkan777
         [Test]
         public void FilterGameLogoutColdHot()
         {
-            GamePage games = new GamePage();
-
             MainPage main = new MainPage();
 
             main.FiltrHot.Click();
@@ -904,8 +832,6 @@ namespace Vulkan777
         public void Check_ToutnamentBannerButton()
         {
 
-            HeaderMenu header = new HeaderMenu();
-            TournamentsPage heroweek = new TournamentsPage();
             VuePage vue = new VuePage();
 
             vue.Registration(false);

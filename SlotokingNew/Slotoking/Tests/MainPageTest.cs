@@ -491,7 +491,7 @@ namespace Slotoking
         }
 
         [Test]
-        public void licensed()
+        public void Licensed()
         {
 
             VuePage vue = new VuePage();
@@ -753,7 +753,7 @@ namespace Slotoking
         }
 
         [Test]
-        public void licensedLogout()
+        public void LicensedLogout()
         {
 
             
