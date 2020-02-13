@@ -18,7 +18,7 @@ namespace Slotoking
         public IWebElement NoDepositBonusBannerButton => Driver.WaitUntilVisible(By.XPath("//*[@id='wrapper']/div[5]/div/div[2]/div[1]/a"));
         public IWebElement FooterGameNewLink => Driver.WaitUntilVisible(By.LinkText("Новые"));
         public IWebElement RegistrationSocialAgreementLink => Driver.WaitUntilVisible(By.LinkText("Правилами и условиями"));
-        public IWebElement logo => Driver.WaitUntilVisible(By.CssSelector("#header > div > div > a > img"));
+        public IWebElement Logo => Driver.WaitUntilVisible(By.CssSelector("#header > div > div > a > img"));
         public IWebElement Otigrash => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div.modal.game > div > div.game__sidebar.show > div.game__sidebar-content > div > div.game__balance-container.balance.cs-1 > div:nth-child(3) > div.balance-message.balance-message-access > div.balance-text.is-disabled"));
         public IWebElement SeoBlockFooter => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div.section.section--gradient.section--highlighted > section > div > div > div > div > p:nth-child(4)"));
 
@@ -96,11 +96,11 @@ namespace Slotoking
         public void ScrollToSeoTextBlock() => (Driver.Browser as IJavaScriptExecutor).ExecuteScript("arguments[0].scrollIntoView();", WelcomeTextTitle);
         public void ScrollToFooter() => (Driver.Browser as IJavaScriptExecutor).ExecuteScript("arguments[0].scrollIntoView();", FooterGameNewLink);
 
-        public void ScrollToElementBonusBezdep() => (Driver.Browser as IJavaScriptExecutor).ExecuteScript("arguments[0].scrollIntoView();", fewfwefew1);
+        public void ScrollToElementBonusBezdep() => (Driver.Browser as IJavaScriptExecutor).ExecuteScript("arguments[0].scrollIntoView();", Fewfwefew1);
 
 
-        public IWebElement fewfwefew1 => Driver.WaitUntilVisible(By.CssSelector("#main-page > div.mobile-feature-position > section"));
-        public IWebElement fewfwefew => Driver.WaitUntilVisible(By.CssSelector("#main-page > section.section.jackpot"));
+        public IWebElement Fewfwefew1 => Driver.WaitUntilVisible(By.CssSelector("#main-page > div.mobile-feature-position > section"));
+        public IWebElement Fewfwefew => Driver.WaitUntilVisible(By.CssSelector("#main-page > section.section.jackpot"));
         public IWebElement ActiveBonusMain => Driver.WaitUntilVisible(By.Id("heroBannerNoActiveBtn"));
         public IWebElement TournamentsPromoContainer => Driver.WaitUntilVisible(By.CssSelector("#games-container > div > div.lazy-component.tournament-block-wrap > div"));
         public IWebElement MoreGamesButton => Driver.WaitUntilClickable(By.Id("more-games"));
@@ -165,26 +165,26 @@ namespace Slotoking
         public IWebElement About => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div/footer/div[1]/div/nav/div[2]/ul/li[3]/a"));
         public IWebElement AboutText => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section.section.section--gradient.section--static > h1"));
 
-        public IWebElement onlineSupport => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div.section.section--gradient > footer > div > div > nav > div:nth-child(3) > ul > li:nth-child(5) > a"));
-        public IWebElement onlineSupportText1 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div.contacts-block__list-wrap > ul > li:nth-child(1)"));
-        public IWebElement onlineSupportText2 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div.contacts-block__list-wrap > ul > li:nth-child(2)"));
-        public IWebElement onlineSupportText3 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div.contacts-block__list-wrap > ul > li:nth-child(3)"));
+        public IWebElement OnlineSupport => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div.section.section--gradient > footer > div > div > nav > div:nth-child(3) > ul > li:nth-child(5) > a"));
+        public IWebElement OnlineSupportText1 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div.contacts-block__list-wrap > ul > li:nth-child(1)"));
+        public IWebElement OnlineSupportText2 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div.contacts-block__list-wrap > ul > li:nth-child(2)"));
+        public IWebElement OnlineSupportText3 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div.contacts-block__list-wrap > ul > li:nth-child(3)"));
 
-        public IWebElement agreements => Driver.WaitUntilVisible(By.LinkText("Положения и условия"));
+        public IWebElement Agreements => Driver.WaitUntilVisible(By.LinkText("Положения и условия"));
 
        
-        public IWebElement agreementsText => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div:nth-child(1)"));
+        public IWebElement AgreementsText => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div:nth-child(1)"));
 
-        public IWebElement privacy => Driver.WaitUntilVisible(By.LinkText("Политика конфиденциальности"));
-        public IWebElement privacyText => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div:nth-child(2)"));
-        public IWebElement licensed => Driver.WaitUntilVisible(By.LinkText("Лицензия"));
+        public IWebElement Privacy => Driver.WaitUntilVisible(By.LinkText("Политика конфиденциальности"));
+        public IWebElement PrivacyText => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div:nth-child(2)"));
+        public IWebElement Licensed => Driver.WaitUntilVisible(By.LinkText("Лицензия"));
 
 
         
 
 
 
-        public IWebElement licensedText => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > p:nth-child(2)"));
+        public IWebElement LicensedText => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > p:nth-child(2)"));
         public IWebElement NavigatorMapsLink => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div.section.section--gradient > footer > div > div > nav > div:nth-child(1)"));
 
 
@@ -226,19 +226,19 @@ namespace Slotoking
 
 
 
-        public IWebElement gameChangeSidebarActiveBonus => Driver.WaitUntilVisible(By.Id("gameChangeSidebarActiveBonus"));
+        public IWebElement GameChangeSidebarActiveBonus => Driver.WaitUntilVisible(By.Id("gameChangeSidebarActiveBonus"));
         public IWebElement UserBarActivity => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div[3]/div[2]/div/div/div"));
 
 
-        public IWebElement gameChangeSidebarActiveTournament => Driver.WaitUntilVisible(By.Id("gameChangeSidebarActiveTournament"));
-        public IWebElement gameChangeSidebarActiveTournamentTimer => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div[3]/div[2]/div/div[1]/div/div[1]"));
+        public IWebElement GameChangeSidebarActiveTournament => Driver.WaitUntilVisible(By.Id("gameChangeSidebarActiveTournament"));
+        public IWebElement GameChangeSidebarActiveTournamentTimer => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div[1]/div/div[3]/div[2]/div/div[1]/div/div[1]"));
 
         public IWebElement HideGamePopup => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div.modal.game > div > span"));
-        public IWebElement support => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div/footer/div[1]/div/nav/div[3]/ul/li[1]/a"));
+        public IWebElement Support => Driver.WaitUntilVisible(By.XPath("//*[@id='vuePopup']/div/footer/div[1]/div/nav/div[3]/ul/li[1]/a"));
 
-        public IWebElement supportPage => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div.contacts-block__list-wrap > ul > li:nth-child(1)"));
-        public IWebElement supportPage1 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div.contacts-block__list-wrap > ul > li:nth-child(2)"));
-        public IWebElement supportPage2 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div.contacts-block__list-wrap > ul > li:nth-child(3)"));
+        public IWebElement SupportPage => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div.contacts-block__list-wrap > ul > li:nth-child(1)"));
+        public IWebElement SupportPage1 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div.contacts-block__list-wrap > ul > li:nth-child(2)"));
+        public IWebElement SupportPage2 => Driver.WaitUntilVisible(By.CssSelector("#vuePopup > div > section > div > div > div > div > div > div > div.contacts-block__list-wrap > ul > li:nth-child(3)"));
 
 
         public IWebElement GameChangeSidebarActive => Driver.WaitUntilVisible(By.Id("gameChangeSidebarActive"));
@@ -250,14 +250,14 @@ namespace Slotoking
 
 
 
-        public void scrollToJackpot()
+        public void ScrollToJackpot()
         {
             Actions actions = new Actions(Driver.Browser);
-            actions.MoveToElement(fewfwefew);
+            actions.MoveToElement(Fewfwefew);
             actions.Perform();
         }
 
-        public void scrollpam()
+        public void Scrollpam()
         {
             Actions actions = new Actions(Driver.Browser);
             actions.MoveToElement(SeoTitle);
@@ -265,7 +265,7 @@ namespace Slotoking
         }
 
 
-        public void scrollFooterfirm()
+        public void ScrollFooterfirm()
         {
             Actions actions = new Actions(Driver.Browser);
             actions.MoveToElement(Footerfirm);
@@ -284,7 +284,7 @@ namespace Slotoking
 
 
 
-        public void scrollDownloadBlock()
+        public void ScrollDownloadBlock()
         {
             Actions actions = new Actions(Driver.Browser);
             actions.MoveToElement(ClientForAndroid);
@@ -295,7 +295,7 @@ namespace Slotoking
 
 
 
-        public void scrollToButtonRegister()
+        public void ScrollToButtonRegister()
         {
             Actions actions = new Actions(Driver.Browser);
             actions.MoveToElement(PrivetstveniyPaketLogoutRegisterButton);

@@ -55,9 +55,6 @@ namespace Vulkan777
             System.Threading.Thread.Sleep(5000);
             Assert.AreNotEqual(balance, games.BalanceTextPartners.Text.DoubleParseAdvanced());
 
-
-
-
         }
 
         [Test]

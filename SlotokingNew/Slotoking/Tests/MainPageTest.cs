@@ -139,8 +139,8 @@ namespace Slotoking
             vue.Auth(TestDataResourceSlotoking.GameUserTest, false);
             Driver.Browser.Url = TestDataResourceSlotoking.MainPageURL + "/?game=book-of-ra&isMoney=true";
             MainPage king = new MainPage();
-            king.gameChangeSidebarActiveTournament.Click();
-            Assert.NotNull(main.gameChangeSidebarActiveTournamentTimer);
+            king.GameChangeSidebarActiveTournament.Click();
+            Assert.NotNull(main.GameChangeSidebarActiveTournamentTimer);
 
         }
 
@@ -152,7 +152,7 @@ namespace Slotoking
             vue.Auth(TestDataResourceSlotoking.GameUserTest, false);
             Driver.Browser.Url = TestDataResourceSlotoking.MainPageURL + "/?game=book-of-ra&isMoney=true";
             MainPage king = new MainPage();
-            king.gameChangeSidebarActiveBonus.Click();
+            king.GameChangeSidebarActiveBonus.Click();
             Assert.NotNull(king.UserBarActivity);
 
         }
@@ -183,7 +183,7 @@ namespace Slotoking
             Driver.Browser.Url = TestDataResourceSlotoking.MainPageURL;
             main.ScrollToElementBonusBezdep();
 
-            Assert.NotNull(main.fewfwefew1);
+            Assert.NotNull(main.Fewfwefew1);
 
         }
 
@@ -499,9 +499,9 @@ namespace Slotoking
 
             vue.Auth(TestDataResourceSlotoking.GameUserTest, false);
             main.ScrollToFooter();
-            main.licensed.Click();
+            main.Licensed.Click();
 
-            Assert.NotNull(main.licensedText);
+            Assert.NotNull(main.LicensedText);
         }
 
         [Test]
@@ -590,9 +590,9 @@ namespace Slotoking
 
             vue.Auth(TestDataResourceSlotoking.GameUserTest, false);
             main.ScrollToFooter();
-            main.agreements.Click();
+            main.Agreements.Click();
 
-            StringAssert.AreEqualIgnoringCase("Пользовательское соглашение", main.agreementsText.Text);
+            StringAssert.AreEqualIgnoringCase("Пользовательское соглашение", main.AgreementsText.Text);
         }
 
         [Test]
@@ -604,9 +604,9 @@ namespace Slotoking
 
             vue.Auth(TestDataResourceSlotoking.GameUserTest, false);
             main.ScrollToFooter();
-            main.privacy.Click();
+            main.Privacy.Click();
 
-            StringAssert.AreEqualIgnoringCase("Сбор личной информации", main.privacyText.Text);
+            StringAssert.AreEqualIgnoringCase("Сбор личной информации", main.PrivacyText.Text);
         }
 
         [Test]
@@ -648,11 +648,11 @@ namespace Slotoking
 
             vue.Auth(TestDataResourceSlotoking.GameUserTest, false);
             main.ScrollToFooter();
-            main.support.Click();
+            main.Support.Click();
 
-            Assert.NotNull(main.supportPage);
-            Assert.NotNull(main.supportPage1);
-            Assert.NotNull(main.supportPage2);
+            Assert.NotNull(main.SupportPage);
+            Assert.NotNull(main.SupportPage1);
+            Assert.NotNull(main.SupportPage2);
         }
 
 
@@ -761,9 +761,9 @@ namespace Slotoking
 
             Driver.Browser.Url = TestDataResourceSlotoking.MainPageURL;
             main.ScrollToFooter();
-            main.licensed.Click();
+            main.Licensed.Click();
 
-            Assert.NotNull(main.licensedText);
+            Assert.NotNull(main.LicensedText);
         }
 
 
@@ -792,9 +792,9 @@ namespace Slotoking
 
             Driver.Browser.Url = TestDataResourceSlotoking.MainPageURL;
             main.ScrollToFooter();
-            main.agreements.Click();
+            main.Agreements.Click();
 
-            StringAssert.AreEqualIgnoringCase("Пользовательское соглашение", main.agreementsText.Text);
+            StringAssert.AreEqualIgnoringCase("Пользовательское соглашение", main.AgreementsText.Text);
         }
 
         [Test]
@@ -806,9 +806,9 @@ namespace Slotoking
             Driver.Browser.Url = TestDataResourceSlotoking.MainPageURL;
 
             main.ScrollToFooter();
-            main.privacy.Click();
+            main.Privacy.Click();
 
-            StringAssert.AreEqualIgnoringCase("Сбор личной информации", main.privacyText.Text);
+            StringAssert.AreEqualIgnoringCase("Сбор личной информации", main.PrivacyText.Text);
         }
 
         [Test]
@@ -849,11 +849,11 @@ namespace Slotoking
 
             Driver.Browser.Url = TestDataResourceSlotoking.MainPageURL;
             main.ScrollToFooter();
-            main.support.Click();
+            main.Support.Click();
 
-            Assert.NotNull(main.supportPage);
-            Assert.NotNull(main.supportPage1);
-            Assert.NotNull(main.supportPage2);
+            Assert.NotNull(main.SupportPage);
+            Assert.NotNull(main.SupportPage1);
+            Assert.NotNull(main.SupportPage2);
         }
 
 
